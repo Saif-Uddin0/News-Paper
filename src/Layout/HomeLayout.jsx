@@ -23,7 +23,7 @@ const HomeLayout = () => {
 
             {/* this is main part */}
             <main className='w-11/12 mx-auto grid grid-cols-12 mt-12 gap-5'>
-                <aside className='col-span-2'>
+                <aside className='col-span-2 sticky top-0 h-fit'>
                     <LeftAside></LeftAside>
                 </aside>
 
@@ -31,7 +31,7 @@ const HomeLayout = () => {
                     <Outlet></Outlet>
                 </section>
 
-                <aside className='col-span-3'>
+                <aside className='col-span-3 sticky top-0 h-fit'>
                     <RightAside></RightAside>
                 </aside>
             </main>
