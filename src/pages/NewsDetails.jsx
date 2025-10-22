@@ -19,7 +19,7 @@ const NewsDetails = () => {
     },[data ,id])
     
     return (
-        <div>
+        <div className='bg-base-200 min-h-screen'>
             <header className='py-3'>
                 <Header></Header>
             </header>
@@ -27,10 +27,10 @@ const NewsDetails = () => {
 
             <main className='w-11/12 mx-auto grid grid-cols-12 gap-5 py-3'>
                 <section className='col-span-9'>
-                    <h2 className='font-bold  mb-5'>news Details</h2>
+                    
                     <NewsDetailsCard key={news.id} news={news}></NewsDetailsCard>
                 </section>
-                <aside className='col-span-3'>
+                <aside className='col-span-3 sticky top-0 h-fit'>
                     <RightAside></RightAside>
                 </aside>
             </main>
